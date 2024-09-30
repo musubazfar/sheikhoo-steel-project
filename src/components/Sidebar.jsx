@@ -61,25 +61,25 @@ export default function Sidebar({ open, toggleDrawer }) {
         </Collapse>
 
         {[
-          "About Us",
-          "Our Testing Philosophy",
-          "Products",
-          "Sustainability",
-          "Contact Us",
-        ].map((text) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton
-              className="list-item-button"
-              component={Link}
-              to={`/${text.toLowerCase().replace(" ", "-")}`}
-              onClick={() => toggleDrawer(false)} // Close drawer for other items
-            >
-              <Typography sx={{ fontSize: 20, fontWeight: 600 }} variant="body1">
-                {text}
-              </Typography>
-            </ListItemButton>
-          </ListItem>
-        ))}
+  "About Us",
+  "Our Testing Philosophy",
+  "Products",
+  "Sustainability",
+  "Contact Us",
+].map((text) => (
+  <ListItem key={text} disablePadding>
+    <ListItemButton
+      className="list-item-button"
+      component={Link}
+      to={`/${text.toLowerCase().replace(/\s+/g, "-")}`} // Replace all spaces with hyphens
+      onClick={() => toggleDrawer(false)} // Close drawer for other items
+    >
+      <Typography sx={{ fontSize: 20, fontWeight: 600 }} variant="body1">
+        {text}
+      </Typography>
+    </ListItemButton>
+  </ListItem>
+))}
       </List>
     </Box>
   );

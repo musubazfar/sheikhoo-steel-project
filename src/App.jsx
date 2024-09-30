@@ -10,13 +10,13 @@ function App() {
       <Routes>
         {/* Define your routes here */}
         <Route path="/" element={<Home />} />
-        <Route path="/inbox" element={<div>Inbox Page</div>} />
-        <Route path="/starred" element={<div>Starred Page</div>} />
-        <Route path="/send-email" element={<div>Send Email Page</div>} />
-        <Route path="/drafts" element={<div>Drafts Page</div>} />
-        <Route path="/all-mail" element={<div>All Mail Page</div>} />
-        <Route path="/trash" element={<div>Trash Page</div>} />
-        <Route path="/spam" element={<div>Spam Page</div>} />
+        <Route path="/technology/melting-section" element={<div>Melting Section</div>} />
+        <Route path="/technology/rolling-section" element={<div>Rolling Section</div>} />
+        <Route path="/about-us" element={<div>About Us</div>} />
+        <Route path="/our-testing-philosophy" element={<div>Our Tensting Philosophy</div>} />
+        <Route path="/products" element={<div>Products</div>} />
+        <Route path="/sustainability" element={<div>Sustainability</div>} />
+        <Route path="/contact-us" element={<div>Contact Us</div>} />
       </Routes>
     </Router>
   );
