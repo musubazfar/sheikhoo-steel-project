@@ -23,7 +23,7 @@ export default function Sidebar({ open, toggleDrawer }) {
 
   const DrawerList = (
     <Box
-      sx={{ width: 250 }}
+      sx={{ width: 300 }}
       role="presentation"
     >
       <Box className="logo-sidebar">
