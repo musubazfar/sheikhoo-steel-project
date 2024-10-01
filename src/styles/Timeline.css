@@ -1,0 +1,48 @@
+.timeline-section {
+    position: relative;
+    height: 300vh;
+    background-color: #ffffff; /* bg-neutral-900 */
+  }
+  
+  .timeline-wrapper {
+    position: sticky;
+    top: 0;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .timeline-items {
+    display: flex;
+    white-space: nowrap; /* whitespace-nowrap */
+  }
+  
+  .timeline-item {
+    min-width: max-content; /* min-w-max */
+    background-color: #4b5563; /* bg-gray-800 */
+    color: white; /* text-white */
+    padding: 16px; /* p-4 */
+    border-radius: 8px; /* rounded */
+  }
+
+.timeline-text {
+    font-weight: 700; /* Set font weight */
+    font-size: 32px; /* Set font size */
+    position: relative; /* Create a positioning context for the :after pseudo-element */
+    display: inline-block; /* Make the text an inline-block to keep the :after close */
+    top: 60px;
+    left: 3%;
+    color: grey;
+    z-index: 1;
+}
+
+.timeline-text:after {
+    content: ''; /* Required for the pseudo-element */
+    display: block; /* Make the pseudo-element a block element */
+    height: 6px; /* Adjust the thickness of the underline */
+    background-color: red; /* Set the underline color */
+    width: 133px; /* Make the underline span the width of the text */
+    position: absolute; /* Position it relative to the .timeline-text */
+    left: 0; /* Align it to the left */
+}
