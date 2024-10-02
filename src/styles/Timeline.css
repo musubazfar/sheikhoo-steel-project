@@ -1,7 +1,56 @@
-.timeline-section {
+@font-face {
+    font-family: 'noir_proheavy';
+    src: url('../assets/fonts/NoirPro-Webfont/NoirPro-Heavy.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'noir_proregular';
+    src: url('../assets/fonts/NoirPro-Webfont/NoirPro-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'noir_promedium';
+    src: url('../assets/fonts/NoirPro-Webfont/NoirPro-Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.timeline-container {
+    position: relative;
+    background-color: #ffffff;
+    height: 300vh;
+  }
+  
+  .timeline-text {
+    display: flex;
+    font-weight: 700;
+    font-size: 32px;
+    color: grey;
+    position: relative;
+    top: -400px; /* Adjust to desired position */
+    left: 80px; /* Align to the right */
+    float: right;
+    z-index: 1;
+  }
+
+  .timeline-text::after{
+    content: '';
+    border-style: solid;
+    border-width: 0px 0px 7px 0px;
+    border-color: #56C8E7;
+    border-radius: 0px 0px 0px 0px;
+    width: 135px;
+    position: absolute;
+    bottom: -6px;
+  }
+  
+  .timeline-section {
     position: relative;
     height: 300vh;
-    background-color: #ffffff; /* bg-neutral-900 */
+    background-color: #ffffff;
   }
   
   .timeline-wrapper {
@@ -15,34 +64,135 @@
   
   .timeline-items {
     display: flex;
-    white-space: nowrap; /* whitespace-nowrap */
+    white-space: nowrap;
+    width: 100%; /* Ensure enough width to allow scrolling */
+    align-items: center;
   }
   
   .timeline-item {
-    min-width: max-content; /* min-w-max */
-    background-color: #4b5563; /* bg-gray-800 */
-    color: white; /* text-white */
-    padding: 16px; /* p-4 */
-    border-radius: 8px; /* rounded */
+    min-width: max-content;
+    /* color: #56c8e7; */
+    color: black;
+    padding: 16px;
+    border-radius: 8px;
+    margin-right: 16px;
+    z-index: 1;
+  }
+  
+  .long-strip{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    background-color: #56c8e7;
+    width: 1200px;
+    height: 50px;
+    z-index: 0;
+    left: 190px
+  }
+  
+  .heading-1 {
+    font-family: 'noir_proheavy';
+    font-size: 44px;
+    line-height: 46px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+    color: #56c8e7;
   }
 
-.timeline-text {
-    font-weight: 700; /* Set font weight */
-    font-size: 32px; /* Set font size */
-    position: relative; /* Create a positioning context for the :after pseudo-element */
-    display: inline-block; /* Make the text an inline-block to keep the :after close */
-    top: 60px;
-    left: 3%;
-    color: grey;
-    z-index: 1;
-}
+  .heading-1-history{
+    color: #cf152d
+  }
 
-.timeline-text:after {
-    content: ''; /* Required for the pseudo-element */
-    display: block; /* Make the pseudo-element a block element */
-    height: 6px; /* Adjust the thickness of the underline */
-    background-color: red; /* Set the underline color */
-    width: 133px; /* Make the underline span the width of the text */
-    position: absolute; /* Position it relative to the .timeline-text */
-    left: 0; /* Align it to the left */
+  .descriptionData{
+    white-space: initial;
+    text-align: left;
+    color: #6d6e71;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.2;
+    max-width: 239px;
+    font-family: 'noir_proregular';
+  }
+
+  .heading-general{
+    min-height: 66px;
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #cf152d;
+    font-family: 'noir_promedium';
+    text-transform: uppercase;
+    text-align: left;
+    line-height: 24px;
+  }
+
+  .yeartop{
+    color: #56c8e7;
+    line-height: 43px;
+    font-weight: bold;
+    font-size: 48px;
+    font-family: 'noir_promedium';
+    text-align: left;
+  }
+
+  .yeartop-2nd{
+    font-weight: bold;
+    font-size: 48px;
+    font-family: 'noir_promedium';
+    text-align: left;
+    color: white;
+    line-height: 0.8;
+  }
+  .yearbottom{
+    color: white;
+    line-height: 43px;
+    font-weight: bold;
+    font-size: 48px;
+    font-family: 'noir_promedium';
+    text-align: left;
+  }
+
+  .yearbottom-2nd{
+    font-weight: bold;
+    font-size: 48px;
+    font-family: 'noir_promedium';
+    text-align: left;
+    color: #56c8e7;
+    line-height: 0.8;
+  }
+
+  .top-part{
+    display: flex;
+    position: relative;
+    bottom: 90px;
+  }
+
+  .bottom-part{
+    display: flex;
+    position: relative;
+    top: 120px;
+    right: 220px
+  }
+
+  .timelineImage img{
+        max-width: 275px;
+        width: 100%;
+  } 
+
+  .top-image-setting{
+    position: relative;
+    top: 69px;
+    right: 40px
+  }
+  .bottom-image-setting{
+    position: relative;
+    top: 50px;
+    right: 10px
+  }
+
+.item3{
+    right: 400px
 }
+  
