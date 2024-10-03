@@ -16,6 +16,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20vh;
+    max-height: 20vh;
     font-family: 'noir_promedium';
 }
