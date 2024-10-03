@@ -1,29 +1,4 @@
-@font-face {
-    font-family: 'noir_proheavy';
-    src: url('../assets/fonts/NoirPro-Webfont/NoirPro-Heavy.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: 'noir_proregular';
-    src: url('../assets/fonts/NoirPro-Webfont/NoirPro-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'noir_promedium';
-    src: url('../assets/fonts/NoirPro-Webfont/NoirPro-Medium.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-  }
-
-.timeline-container {
-    position: relative;
-    background-color: #ffffff;
-    height: 300vh;
-  }
-  
+ 
   .timeline-text {
     display: flex;
     font-weight: 700;
@@ -65,7 +40,7 @@
   .timeline-items {
     display: flex;
     white-space: nowrap;
-    width: 100%; /* Ensure enough width to allow scrolling */
+    width: 600%; /* Ensure enough width to allow scrolling */
     align-items: center;
   }
   
@@ -84,7 +59,7 @@
     display: flex;
     align-items: center;
     background-color: #56c8e7;
-    width: 1200px;
+    width: 1734px;
     height: 50px;
     z-index: 0;
     left: 190px
@@ -177,13 +152,13 @@
   }
 
   .timelineImage img{
-        max-width: 275px;
+        max-width: 200px;
         width: 100%;
   } 
 
   .top-image-setting{
     position: relative;
-    top: 69px;
+    top: 99px;
     right: 40px
   }
   .bottom-image-setting{
@@ -193,6 +168,51 @@
   }
 
 .item3{
-    right: 400px
+    right: 400px;
+    top: -84px
 }
-  
+
+.item4{
+    right: 580px;
+    top: 76px
+}
+
+.item5{
+    right: 730px;
+    bottom: 97px
+}
+
+.item6{
+    right: 880px;
+    top: 76px
+}
+
+.Sheikhoo-container{
+    display: flex;
+    position: relative;
+    right:880px;
+    top: 130px
+}
+
+.heading-sheikhoo{
+    min-height: 66px;
+    display: flex;
+    align-items: center;
+    font-size: 48px;
+    font-weight: bold;
+    color: #cf152d;
+    font-family: 'noir_promedium';
+    text-transform: uppercase;
+    text-align: left;
+    line-height: 44px;
+  }
+
+.headingsAndPara{
+    margin-left: 20px;
+}
+
+.image_sheikhoo{
+    position: relative;
+    bottom: 125px;
+    margin-left:20px;
+}

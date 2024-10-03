@@ -9,3 +9,13 @@
     height: auto; /* Allows height to adjust according to width */
     object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
 }
+
+.Steel_game_change{
+    background-color: #333333;
+    padding: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    font-family: 'noir_promedium';
+}
