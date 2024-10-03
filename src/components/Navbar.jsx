@@ -18,7 +18,7 @@ const Navbar = () => {
               </Box>
             </Box>
             <Box className='logo'>
-                <img src={logo} alt='Shiekhoo-steel-logo'/>
+                <img src={logo} alt='Shiekhoo-steel-logo' style={{width: '250px', height: '100px'}}/>
             </Box>
         </Box>
         <Sidebar open={openDrawer} toggleDrawer={toggleDrawer}/>

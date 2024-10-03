@@ -71,7 +71,7 @@ const Timeline = () => {
               <Box className="yeartop-2nd">50s</Box>
             </Box>
             <Box className="timelineImage top-image-setting">
-              <img src={timeline1} alt="" />
+              <img src={timeline1} alt="" style={{width: '200px', height: '75px'}} loading="lazy" />
             </Box>
           </Box>
 
@@ -86,7 +86,7 @@ const Timeline = () => {
               </Box>
             </Box>
             <Box className="timelineImage bottom-image-setting">
-              <img src={timeline2} alt="" />
+              <img src={timeline2} alt="" loading="lazy" style={{width: '200px', height: '75px'}}/>
             </Box>
           </Box>
 
@@ -101,7 +101,7 @@ const Timeline = () => {
               <Box className="yeartop-2nd">60s</Box>
             </Box>
             <Box className="timelineImage top-image-setting" sx={{ top: '72px' }}>
-              <img src={timeline3} alt="" />
+              <img src={timeline3} alt="" loading="lazy" style={{width: '200px', height: '75px'}}/>
             </Box>
           </Box>
 
@@ -116,7 +116,7 @@ const Timeline = () => {
               </Box>
             </Box>
             <Box className="timelineImage bottom-image-setting" sx={{ top: '45px' }}>
-              <img src={timeline4} alt="" />
+              <img src={timeline4} alt="" loading="lazy" style={{width: '200px', height: '75px'}}/>
             </Box>
           </Box>
 
@@ -131,7 +131,7 @@ const Timeline = () => {
               <Box className="yeartop-2nd">91</Box>
             </Box>
             <Box className="timelineImage top-image-setting" sx={{ top: '72px' }}>
-              <img src={timeline5} alt="" />
+              <img src={timeline5} alt="" loading="lazy" style={{width: '200px', height: '75px'}}/>
             </Box>
           </Box>
 
@@ -150,7 +150,7 @@ const Timeline = () => {
               </Box>
             </Box>
             <Box className="image_sheikhoo">
-              <img src={timeline6} alt="" style={{ maxWidth: '140px' }} />
+              <img src={timeline6} alt="" style={{ maxWidth: '140px' }} loading="lazy"/>
             </Box>
           </Box>
         </motion.div>

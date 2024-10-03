@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Box, Typography, useMediaQuery } from '@mui/material'
-import homeBanner from '../assets/sheikhoo-steel-video-banner.png'
+// import { Helmet } from 'react-helmet';
+import homeBanner from '../assets/sheikhoo-steel-video-banner.webp'
 import '../styles/Home.css'
 import Timeline from '../components/Timeline'
 import { useTheme } from '@emotion/react'
@@ -8,11 +9,14 @@ import { useTheme } from '@emotion/react'
 const Home = () => {
     const theme = useTheme();
     const isMdUp = useMediaQuery(theme.breakpoints.up('md'));
-    console.log(isMdUp)
+
   return (
     <>
+     {/* <Helmet>
+        <link rel="preload" as="image" href={homeBanner} />
+      </Helmet> */}
     <Box className='banner-container'>
-    <img src={homeBanner} alt="sheikhoo-steel-video-banner" className='banner-image'/>
+    <img src={homeBanner} alt="sheikhoo-steel-video-banner" width="1920" height="1080" className='banner-image'/>
     </Box>
     <Timeline/>
     <Box className='Steel_game_change'>

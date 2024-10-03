@@ -6,6 +6,7 @@
 
 .banner-image {
     width: 100%;
+    max-width: 100%;
     height: auto; /* Allows height to adjust according to width */
     object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
 }
