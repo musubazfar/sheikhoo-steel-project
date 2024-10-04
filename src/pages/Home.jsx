@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Box, Typography, useMediaQuery } from '@mui/material'
 // import { Helmet } from 'react-helmet';
 import homeBanner from '../assets/sheikhoo-steel-video-banner.webp'
@@ -12,9 +12,6 @@ const Home = () => {
 
   return (
     <>
-     {/* <Helmet>
-        <link rel="preload" as="image" href={homeBanner} />
-      </Helmet> */}
     <Box className='banner-container'>
     <img src={homeBanner} alt="sheikhoo-steel-video-banner" width="1920" height="1080" className='banner-image'/>
     </Box>
