@@ -60,13 +60,13 @@ const RollingSection = () => {
               ROLLED TO <br/> PERFECTION.
             </Typography>
             <Typography className='slide-description-timeline3' maxWidth={'470px'}>
-            The strengths passed on from Sheikhoo Melt Shop become the strength of our Rolling Mill. Hence, Sheikhoo Steel rebars boast the same exceptional quality and finish as that is characteristic of Sheikhoo Steel billets that are used to make them
+            The strengths passed on from Sheikhoo Melt Shop become the strength of our Rolling Mill. Hence, Sheikhoo Steel rebars boast the same exceptional quality and finish as that is characteristic of Sheikhoo Steel billets that are used to make them. However, there is more to our rebars than meets the eye.
             </Typography>
           </Box>
           
           {/* Animated Image 1 */}
           <Box className='timeline-item-timeline3' sx={{ display: 'flex' }}>
-            <Box className='text-box-timeline3'>IMPORTED AND TESTED RAW MATERIALS</Box>
+            <Box className='text-box-timeline3'>AUTOMATED FOR CONSISTENCY AND OPTIMIZATION</Box>
             <motion.div
               className='image-box-timeline3'
               initial="initial"
@@ -91,12 +91,12 @@ const RollingSection = () => {
             >
               <img src={item2} alt="Sheikhoo-steel-unmix-method" width={'100%'} />
             </motion.div>
-            <Box className='text-box-timeline3'>UN-MIXED METHOD</Box>
+            <Box className='text-box-timeline3'>DIRECT ROLLING PROCESS</Box>
           </Box>
 
           {/* Animated Image 3 */}
           <Box className='timeline-item-timeline3' sx={{ display: 'flex' }}>
-            <Box className='text-box-timeline3'>PUREST QUALITY MIX</Box>
+            <Box className='text-box-timeline3'>PERFECT CURVATURE & EVEN WEIGHT DISTRIBUTION</Box>
             <motion.div
               className='image-box-timeline3'
               initial="initial"
@@ -121,12 +121,12 @@ const RollingSection = () => {
             >
               <img src={item4} alt="Sheikhoo-steel-no-impurity" width={'100%'} />
             </motion.div>
-            <Box className='text-box-timeline3'>IMPURITY ISOLATION</Box>
+            <Box className='text-box-timeline3'>UPLIFTED QUALITY WITH STRAIGHTER REBARS</Box>
           </Box>
 
           {/* Animated Image 5 */}
           <Box className='timeline-item-timeline3' sx={{ display: 'flex' }}>
-            <Box className='text-box-timeline3'>EUROPEAN CONTINUOUS CASTING MACHINE</Box>
+            <Box className='text-box-timeline3'>RIBS AND STAMP AS PER INTERNATIONAL STANDARDS</Box>
             <motion.div
               className='image-box-timeline3'
               initial="initial"
