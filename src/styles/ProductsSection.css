@@ -1,0 +1,25 @@
+.container-products{
+    background-color: #56c8e8;
+    width: 100%;
+}
+
+.productSectionHeading{
+    font-family: 'noir_promedium';
+    font-size: 99px;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    color: #d32433;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 767px) {
+    .productSectionHeading {
+        font-size: 40px;
+        height: 100px
+    }
+}
