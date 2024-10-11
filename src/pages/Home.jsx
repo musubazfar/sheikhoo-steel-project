@@ -4,6 +4,9 @@ import '../styles/Home.css';
 import { useTheme } from '@emotion/react';
 import homeBanner from '../assets/sheikhoo-steel-video-banner.webp';
 import MeltingSectionTimeline from '../components/MeltingSectionTimeline';
+import Loading from '../components/Loading'
+import TypewriterEffect from '../components/TypeWriter';
+import RollingSection from '../components/RollingSectionTimeline';
 
 // Lazy load the Timeline component
 const Timeline = lazy(() => import('../components/Timeline'));
@@ -18,14 +21,11 @@ const Home = () => {
                 <img 
                     src={homeBanner} 
                     alt="sheikhoo-steel-video-banner" 
-                    // width="1920" 
-                    // height="1080" 
                     className='banner-image'
                     loading="lazy" // Lazy load the image
                 />
             </Box>
-            {/* Use Suspense to handle the loading state of the lazy-loaded component */}
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<Loading/>}>
                 <Timeline />
             </Suspense>
             <Box className='Steel_game_change'>
@@ -36,10 +36,11 @@ const Home = () => {
                     fontSize={isMdUp ? '5rem' : '3rem'} 
                     color='white'
                 >
-                    HOW OUR STEEL <br /> CHANGES THE GAME
+                    <TypewriterEffect text="HOOW OUR STEEL <br /> CCHANGES THE GAME" speed={100} />
                 </Typography>
             </Box>
             <MeltingSectionTimeline/>
+            <RollingSection/>
         </>
     );
 }

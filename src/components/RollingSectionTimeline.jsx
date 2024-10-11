@@ -1,14 +1,14 @@
 import React, { useRef, useState, useEffect } from 'react';
-import '../styles/MeltingSectionTimeline.css';
+import '../styles/RollingSectionTimeline.css';
 import { Box, Typography, useMediaQuery, useTheme } from '@mui/material';
 import { motion, useTransform, useScroll } from "framer-motion";
-import item1 from '../assets/Timeline2-item1.jpg';
-import item2 from '../assets/Timeline2-item2.jpg';
-import item3 from '../assets/Timeline2-item3.jpg';
-import item4 from '../assets/Timeline2-item4.jpg';
-import item5 from '../assets/Timeline2-item5.jpg';
+import item1 from '../assets/Timeline3-item1.jpg';
+import item2 from '../assets/Timeline3-item2.jpg';
+import item3 from '../assets/Timeline3-item3.jpg';
+import item4 from '../assets/Timeline3-item4.jpg';
+import item5 from '../assets/Timeline3-item5.jpg';
 
-const MeltingSectionTimeline = () => {
+const RollingSection = () => {
   const theme = useTheme(); 
   const isMd = useMediaQuery(theme.breakpoints.down("md"));
 
@@ -22,13 +22,13 @@ const MeltingSectionTimeline = () => {
       const width = window.innerWidth;
 
       if (width <= 600) {
-        setXTransform(["-10%", "-170%"]);
+        setXTransform(["-10%", "-145%"]);
       } else if (width <= 1130) {
-        setXTransform(["-10%", "-155%"]);
+        setXTransform(["-10%", "-137%"]);
       } else if (width <= 1526) {
-        setXTransform(["-10%", "-140%"]);
+        setXTransform(["-10%", "-124%"]);
       } else {
-        setXTransform(["-10%", "-130%"]);
+        setXTransform(["-10%", "-113%"]);
       }
     };
 
@@ -49,30 +49,30 @@ const MeltingSectionTimeline = () => {
   };
 
   return (
-    <section className='container-timeline2' ref={targetRef}>
-      <Box className='timeline-wrapper-timeline2'>
-        <Box className='timeline-text-timeline2' sx={{ left: isMd ? '20px' : '80px' }}>
-          MELTING SECTION
+    <section className='container-timeline3' ref={targetRef}>
+      <Box className='timeline-wrapper-timeline3'>
+        <Box className='timeline-text-timeline3' sx={{ left: isMd ? '20px' : '80px' }}>
+          ROLLING SECTION
         </Box>
-        <motion.div style={{ x }} className="timeline-items-timeline2">
-          <Box className='timeline-item-timeline2' sx={{ marginRight: '60vw' }}>
-            <Typography variant='h2' className='slide-heading' fontWeight={1000}>
-              BETTER <br/>THE BULLET, <br/>STRONGER<br/> THE STEEL.
+        <motion.div style={{ x }} className="timeline-items-timeline3">
+          <Box className='timeline-item-timeline3' sx={{ marginRight: '60vw' }}>
+            <Typography variant='h2' className='slide-heading-timeline3' fontWeight={1000}>
+              ROLLED TO <br/> PERFECTION.
             </Typography>
-            <Typography className='slide-description' maxWidth={'470px'}>
-              Sheikhoo Steel is the producer of Pakistan’s best-selling steel billets for over three years in a row, owing to Sheikhoo Steel’s Melt Shop. Here is what makes Sheikhoo Steel Melt Shop the best in the industry
+            <Typography className='slide-description-timeline3' maxWidth={'470px'}>
+            The strengths passed on from Sheikhoo Melt Shop become the strength of our Rolling Mill. Hence, Sheikhoo Steel rebars boast the same exceptional quality and finish as that is characteristic of Sheikhoo Steel billets that are used to make them
             </Typography>
           </Box>
           
           {/* Animated Image 1 */}
-          <Box className='timeline-item-timeline2' sx={{ display: 'flex' }}>
-            <Box className='text-box'>IMPORTED AND TESTED RAW MATERIALS</Box>
+          <Box className='timeline-item-timeline3' sx={{ display: 'flex' }}>
+            <Box className='text-box-timeline3'>IMPORTED AND TESTED RAW MATERIALS</Box>
             <motion.div
-              className='image-box'
+              className='image-box-timeline3'
               initial="initial"
               whileInView="animate"
               exit="exit"
-              viewport={{ amount: 0.6 }}
+              viewport={{ amount: 0.5 }}
               variants={imageAnimations}
             >
               <img src={item1} alt="Sheikhoo-steel-imported-and-tested-raw-materials" width={'100%'} />
@@ -80,29 +80,29 @@ const MeltingSectionTimeline = () => {
           </Box>
 
           {/* Animated Image 2 */}
-          <Box className='timeline-item-timeline2' sx={{ display: 'flex' }}>
+          <Box className='timeline-item-timeline3' sx={{ display: 'flex' }}>
             <motion.div
-              className='image-box'
+              className='image-box-timeline3'
               initial="initial"
               whileInView="animate"
               exit="exit"
-              viewport={{ amount: 0.6 }}
+              viewport={{ amount: 0.5 }}
               variants={{ ...imageAnimations, transition: { duration: 1.2 } }}
             >
               <img src={item2} alt="Sheikhoo-steel-unmix-method" width={'100%'} />
             </motion.div>
-            <Box className='text-box'>UN-MIXED METHOD</Box>
+            <Box className='text-box-timeline3'>UN-MIXED METHOD</Box>
           </Box>
 
           {/* Animated Image 3 */}
-          <Box className='timeline-item-timeline2' sx={{ display: 'flex' }}>
-            <Box className='text-box'>PUREST QUALITY MIX</Box>
+          <Box className='timeline-item-timeline3' sx={{ display: 'flex' }}>
+            <Box className='text-box-timeline3'>PUREST QUALITY MIX</Box>
             <motion.div
-              className='image-box'
+              className='image-box-timeline3'
               initial="initial"
               whileInView="animate"
               exit="exit"
-              viewport={{ amount: 0.6 }}
+              viewport={{ amount: 0.5 }}
               variants={{ ...imageAnimations, transition: { duration: 1.4 } }}
             >
               <img src={item3} alt="Sheikhoo-steel-pure-quality" width={'100%'} />
@@ -110,29 +110,29 @@ const MeltingSectionTimeline = () => {
           </Box>
 
           {/* Animated Image 4 */}
-          <Box className='timeline-item-timeline2' sx={{ display: 'flex' }}>
+          <Box className='timeline-item-timeline3' sx={{ display: 'flex' }}>
             <motion.div
-              className='image-box'
+              className='image-box-timeline3'
               initial="initial"
               whileInView="animate"
               exit="exit"
-              viewport={{ amount: 0.6 }}
+              viewport={{ amount: 0.5 }}
               variants={{ ...imageAnimations, transition: { duration: 1.6 } }}
             >
               <img src={item4} alt="Sheikhoo-steel-no-impurity" width={'100%'} />
             </motion.div>
-            <Box className='text-box'>IMPURITY ISOLATION</Box>
+            <Box className='text-box-timeline3'>IMPURITY ISOLATION</Box>
           </Box>
 
           {/* Animated Image 5 */}
-          <Box className='timeline-item-timeline2' sx={{ display: 'flex' }}>
-            <Box className='text-box'>EUROPEAN CONTINUOUS CASTING MACHINE</Box>
+          <Box className='timeline-item-timeline3' sx={{ display: 'flex' }}>
+            <Box className='text-box-timeline3'>EUROPEAN CONTINUOUS CASTING MACHINE</Box>
             <motion.div
-              className='image-box'
+              className='image-box-timeline3'
               initial="initial"
               whileInView="animate"
               exit="exit"
-              viewport={{ amount: 0.6 }}
+              viewport={{ amount: 0.5 }}
               variants={{ ...imageAnimations, transition: { duration: 1.8 } }}
             >
               <img src={item5} alt="Sheikhoo-steel-european-standards-casting-machine" width={'100%'} />
@@ -144,4 +144,4 @@ const MeltingSectionTimeline = () => {
   );
 };
 
-export default MeltingSectionTimeline;
+export default RollingSection;

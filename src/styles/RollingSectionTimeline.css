@@ -1,18 +1,18 @@
 
 
-.container-timeline2{
+.container-timeline3{
     position: relative;
     height: 300vh;
 }
 
-.timeline-wrapper-timeline2 {
+.timeline-wrapper-timeline3 {
     position: sticky;
     top: 0;
     display: flex;
     height: 100vh;
     align-items: center;
     overflow: hidden;
-    background-image: url('../assets/timeline2-bg.jpg');
+    background-image: url('../assets/timeline3-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     animation: moveBg 60s linear infinite; /* Adjust duration and timing */
@@ -28,23 +28,22 @@
     }
 }
 
-.timeline-items-timeline2 {
+.timeline-items-timeline3 {
     display: flex;
     white-space: nowrap;
     width: calc(400px * 4); /* Example: Multiply the item width by the number of items */
     align-items: center;
 }
 
-  .timeline-item-timeline2 {
-    min-width: 400px; /* Set a minimum width for each item */
+  .timeline-item-timeline3 {
+    min-width: 355px; /* Set a minimum width for each item */
     height: 650px; /* Height of each item */
-    margin: 0px; /* Spacing between items */
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
   
-.timeline-text-timeline2 {
+.timeline-text-timeline3 {
     display: flex;
     font-weight: 700;
     font-size: 32px;
@@ -57,7 +56,7 @@
     z-index: 1;
   }
 
-  .timeline-text-timeline2::after{
+  .timeline-text-timeline3::after{
     content: '';
     border-style: solid;
     border-width: 0px 0px 7px 0px;
@@ -68,9 +67,9 @@
     bottom: -6px;
   }
 
-  .slide-heading {
+  .slide-heading-timeline3 {
     text-align: left;
-    color: #CF152D;
+    color: #56c8e7;
     font-family: 'noir_proheavy' !important;
     font-size: 75px;
     font-weight: 800;
@@ -79,7 +78,7 @@
     margin-top: 80px;
   }
 
-  .slide-description {
+  .slide-description-timeline3 {
     text-align: left;
     font-family: 'noir_proregular' !important;
     font-size: 18px;
@@ -91,7 +90,7 @@
     text-wrap: wrap;
 }
 
-.text-box {
+.text-box-timeline3 {
   width: 100%;
   height: 50%;
   display: flex;
@@ -99,7 +98,7 @@
   justify-content: center;
   padding: 7%;
   font-size: 26px;
-  color: red;
+  color: #56c8e7;
   font-weight: 800;
   font-family: 'noir_promedium';
   line-height: 1;
@@ -109,7 +108,7 @@
   background-color: #000000;
 }
 
-.image-box{
+.image-box-timeline3{
   width: 100%;
   height: 50%;
   display: flex;
