@@ -17,9 +17,68 @@
     align-items: center;
 }
 
+.armour-slide {
+    background-size: cover;
+    background-position: center;
+    width: 100%; /* Ensure it takes the full width */
+    height: 100%; /* Full height */
+    display: flex;
+    flex-direction: row; /* Side by side divs */
+    box-sizing: border-box;
+    padding: 20px 0
+}
+
+/* First child takes 70% of the width */
+.armour-slide > div:first-child {
+    flex: 6; /* 70% width */
+    min-width: 0; /* Prevents overflowing */
+}
+
+/* Second child takes 30% of the width */
+.armour-slide > div:last-child {
+    flex: 4; /* 30% width */
+    min-width: 0; /* Prevents overflowing */
+}
+
+.slide-text{
+    color: #fff;
+    font-family: 'noir_proheavy';
+    font-size: 3.5rem;
+    display: block;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+}
+
+.overlay-text-style{
+    font-family: 'noir_proheavy' !important;
+    font-size: 1.5rem !important;
+    color: #fff;
+    line-height: 1;
+    font-weight: 600;
+}
+
+
 @media only screen and (max-width: 767px) {
     .productSectionHeading {
         font-size: 40px;
         height: 100px
+    }
+    .slide-text{
+        font-size: 1rem;
     }
 }
