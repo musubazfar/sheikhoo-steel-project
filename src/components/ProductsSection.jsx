@@ -39,7 +39,7 @@ const ProductsSection = () => {
           <SwiperSlide>
             <Box className='armour-slide' sx={{backgroundImage: `url(${red})`}}>
               <Box><img src={armour} alt="armour-rebar-sheikhoo" /></Box>
-              <Box className='slide-text'>SHEIKHOO <br/> ARMOUR <br/> <Typography className='slide-text' sx={{fontSize: '2rem'}}>GRADE 60</Typography></Box>
+              <Box className='slide-text'>SHEIKHOO <br/> ARMOUR <br/> <Typography className='slide-text-grade' sx={{fontSize: '2rem'}}>GRADE 60</Typography></Box>
             </Box>
           </SwiperSlide>
           <SwiperSlide>
@@ -57,12 +57,13 @@ const ProductsSection = () => {
         </Swiper>
         <Swiper
         onSwiper={setThumbsSwiper}
-        spaceBetween={10}
+        spaceBetween={500}
         slidesPerView={3}
         freeMode={true}
         watchSlidesProgress={true}
         modules={[FreeMode, Navigation, Thumbs]}
         className="mySwiper"
+        style={{padding: 30}}
       >
         <SwiperSlide style={{ position: 'relative' }}>
           <img src={red} alt="nature-thumb-1" />
