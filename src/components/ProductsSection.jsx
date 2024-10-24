@@ -57,7 +57,7 @@ const ProductsSection = () => {
         </Swiper>
         <Swiper
         onSwiper={setThumbsSwiper}
-        spaceBetween={500}
+        spaceBetween={50}
         slidesPerView={3}
         freeMode={true}
         watchSlidesProgress={true}
@@ -66,21 +66,21 @@ const ProductsSection = () => {
         style={{padding: 30}}
       >
         <SwiperSlide style={{ position: 'relative' }}>
-          <img src={red} alt="nature-thumb-1" />
+          <img src={red} alt="nature-thumb-1" className='imageTabs'/>
           <Box className="overlay-text">
-            <Typography className='overlay-text-style'>SHEIKHOO<br/>ARMOUR<br/><Typography>GRADE 60</Typography></Typography>
+            <Typography className='overlay-text-style'>SHEIKHOO<br/>ARMOUR<br/><Typography component='span' className='overlay-text-style'>GRADE 60</Typography></Typography>
           </Box>
         </SwiperSlide>
         <SwiperSlide style={{ position: 'relative' }}>
-          <img src={blue} alt="nature-thumb-2" />
+          <img src={blue} alt="nature-thumb-2" className='imageTabs'/>
           <Box className="overlay-text">
-            <Typography className='overlay-text-style'>SHEIKHOO<br/>DEFENDER<br/><Typography>ASTM 706</Typography></Typography>
+            <Typography className='overlay-text-style'>SHEIKHOO<br/>DEFENDER<br/><Typography component='span' className='overlay-text-style'>ASTM 706</Typography></Typography>
           </Box>
         </SwiperSlide>
         <SwiperSlide style={{ position: 'relative' }}>
-          <img src={purple} alt="nature-thumb-3" />
+          <img src={purple} alt="nature-thumb-3"className='imageTabs'/>
           <Box className="overlay-text">
-            <Typography className='overlay-text-style'>SHEIKHOO<br/>COMMANDER<br/><Typography>BS 4449</Typography></Typography>
+            <Typography className='overlay-text-style'>SHEIKHOO<br/>COMMANDER<br/><Typography component='span' className='overlay-text-style'>BS 4449</Typography></Typography>
           </Box>
         </SwiperSlide>
       </Swiper>

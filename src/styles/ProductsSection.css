@@ -30,13 +30,13 @@
 
 /* First child takes 70% of the width */
 .armour-slide > div:first-child {
-    flex: 6; /* 70% width */
+    flex: 7; /* 70% width */
     min-width: 0; /* Prevents overflowing */
 }
 
 /* Second child takes 30% of the width */
 .armour-slide > div:last-child {
-    flex: 4; /* 30% width */
+    flex: 7; /* 30% width */
     min-width: 0; /* Prevents overflowing */
 }
 
@@ -72,6 +72,10 @@
     font-weight: 600;
 }
 
+.imageTabs{
+    min-height: 100px;
+    min-width: 120px;
+}
 
 @media only screen and (max-width: 767px) {
     .productSectionHeading {
@@ -80,5 +84,11 @@
     }
     .slide-text{
         font-size: 1rem;
+    }
+    .overlay-text-style{
+        font-size: 0.8rem !important;
+    }
+    .mySwiper{
+        max-width: '100%';
     }
 }
