@@ -6,8 +6,6 @@ import homeBanner from '../assets/sheikhoo-steel-video-banner.webp';
 import MeltingSectionTimeline from '../components/MeltingSectionTimeline';
 import Loading from '../components/Loading'
 import TypewriterEffect from '../components/TypeWriter';
-// import RollingSection from '../components/RollingSectionTimeline';
-// import ProductsSection from '../components/ProductsSection';
 
 // Lazy load the Timeline component
 const Timeline = lazy(() => import('../components/Timeline'));

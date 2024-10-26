@@ -15,7 +15,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    animation: zoomBackground 19s infinite alternate; /* Adjust duration as needed */
+    animation: zoomBackground 22s infinite alternate; /* Adjust duration as needed */
     z-index: -1; /* Make sure it stays behind the content */
 }
 
