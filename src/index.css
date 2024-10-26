@@ -18,6 +18,11 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'noir_probold';
+  src: url('./assets/fonts/NoirPro-Webfont/NoirPro-Bold.woff2') format('woff2');
+}
+
 body {
   margin: 0;
   padding: 0;

@@ -77,6 +77,49 @@
     min-width: 120px;
 }
 
+.MuiTypography-root.getInTouch{
+    border-style: solid;
+    border-width: 0px 0px 7px 0px;
+    border-color: #56C8E7;
+    border-radius: 0px 0px 0px 0px;
+    max-width: 249px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #A7A9AC;
+    font-family: 'noir_probold';
+    font-size: 26px;
+    line-height: 44px;
+    letter-spacing: 0px;
+    margin: 0;
+}
+.footer-home{
+    background-image: url('../assets/footer.jpg');
+    background-size: cover;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MuiTypography-root.contact-us-heading {
+    color: #FDFDFD;
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 600;
+    font-family: 'noir_proregular';
+    margin-bottom: 20px;
+}
+
+.MuiTypography-root.contact-us-text{
+    color: #000;
+    font-size: 20px;
+    line-height: 1;
+    text-wrap: pretty;
+    text-align: center;
+    font-weight: 600;
+    font-family: 'noir_proregular';
+}
+
 @media only screen and (max-width: 767px) {
     .productSectionHeading {
         font-size: 40px;

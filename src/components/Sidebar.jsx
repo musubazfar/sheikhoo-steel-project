@@ -41,7 +41,7 @@ export default function Sidebar({ open, toggleDrawer }) {
           />
         </Link>
         <Close
-          sx={{ ml: 10, cursor: "pointer" }}
+          sx={{cursor: "pointer" }}
           onClick={() => toggleDrawer(false)}
         />
       </Box>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 import '../styles/navbar.css'
 import { Box } from '@mui/material'
 import { Menu } from '@mui/icons-material';
@@ -18,7 +19,9 @@ const Navbar = () => {
               </Box>
             </Box>
             <Box className='logo'>
+              <Link to="/" style={{ display: "inline-block" }}>
                 <img src={logo} alt='Shiekhoo-steel-logo' style={{width: '250px', height: '100px'}}/>
+              </Link>
             </Box>
         </Box>
         <Sidebar open={openDrawer} toggleDrawer={toggleDrawer}/>
