@@ -2,10 +2,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #56c8e7d6;
     padding: 10px;
     min-height: 70px;
-    position: relative;
+    width: 100%;
+    z-index: 1;
+    border-bottom: 1px solid #52c9e9;
 }
 
 .logo {

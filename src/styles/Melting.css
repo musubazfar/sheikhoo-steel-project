@@ -1,0 +1,52 @@
+.melting-section-1 {
+    position: relative; /* Create a positioning context */
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; /* Hide any overflow caused by the zoom */
+}
+
+.melting-section-1::before {
+    content: '';
+    position: absolute; /* Position it absolutely */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; /* Cover the entire parent */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: zoomBackground 19s infinite alternate; /* Adjust duration as needed */
+    z-index: -1; /* Make sure it stays behind the content */
+}
+
+.melting-bg-1::before {
+    background-image: url('../assets/melting-bg-1.jpg');
+}
+
+.melting-bg-2::before {
+    background-image: url('../assets/melting-bg-2.jpg');
+}
+
+.melting-bg-3::before {
+    background-image: url('../assets/melting-bg-3.jpg');
+}
+
+.melting-bg-4::before {
+    background-image: url('../assets/melting-bg-4.jpg');
+}
+
+.melting-bg-5::before {
+    background-image: url('../assets/melting-bg-5.jpg');
+}
+
+@keyframes zoomBackground {
+    0% {
+        transform: scale(1); /* Start at normal size */
+    }
+    50% {
+        transform: scale(1.4); /* Zoom in */
+    }
+    100% {
+        transform: scale(1); /* Back to normal size */
+    }
+}
