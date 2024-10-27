@@ -7,6 +7,7 @@
     width: 100%;
     z-index: 1;
     border-bottom: 1px solid #52c9e9;
+    box-sizing: border-box;
 }
 
 .logo {

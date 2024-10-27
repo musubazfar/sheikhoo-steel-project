@@ -15,7 +15,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    animation: zoomBackground 22s infinite alternate; /* Adjust duration as needed */
+    animation: zoomBackground 120s infinite linear alternate; /* Adjust duration as needed */
     z-index: -1; /* Make sure it stays behind the content */
 }
 
@@ -49,4 +49,12 @@
     100% {
         transform: scale(1); /* Back to normal size */
     }
+}
+
+.container-melting{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
 }

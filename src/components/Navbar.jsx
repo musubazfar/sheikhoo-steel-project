@@ -20,7 +20,7 @@ const Navbar = ({isTransparent}) => {
             </Box>
             <Box className='logo'>
               <Link to="/" style={{ display: "inline-block" }}>
-                <img src={logo} alt='Shiekhoo-steel-logo' style={{width: '250px', height: '100px'}}/>
+                <img src={logo} alt='Shiekhoo-steel-logo'/>
               </Link>
             </Box>
         </Box>

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-route
 import { Suspense, lazy } from 'react';
 import LoadingPage from './components/Loading';
 import Melting from './pages/Melting';
+import Footer from './components/Footer';
 
 // Lazy load the Navbar and Home components
 const Navbar = lazy(() => import('./components/Navbar'));
@@ -32,6 +33,7 @@ const AppWithLocation = () => {
         <Route path="/sustainability" element={<div>Sustainability</div>} />
         <Route path="/contact-us" element={<div>Contact Us</div>} />
       </Routes>
+      <Footer/>
     </>
   );
 };
