@@ -30,21 +30,6 @@ const Melting = () => {
       >
       <section className='melting-section-1 melting-bg-1' ref={ref[0]}>
         <Box className='container-melting'>
-        <Box sx={{ width: '100%', textAlign: 'left' }}>
-  <Box sx={{ display: 'inline-block', borderBottom: '7px solid white', mb: '1rem', ml: '4vw' }}> {/* Inline block to contain border */}
-    <Typography
-      sx={{
-        color: '#cd0e2d',
-        fontFamily: 'noir_probold',
-        fontSize: '26px',
-        lineHeight: '30px',
-        letterSpacing: '0px',
-      }}
-    >
-      MELTING SECTION
-    </Typography>
-  </Box>
-</Box>
           <Grid2 container spacing={0}>
             <Grid2 item className='textSectionMelting' xs={12} sm={6}>
               <Typography variant='h2' className='MeltingHeading'>IMPORTED & TESTED RAW MATERIAL</Typography>
@@ -91,7 +76,7 @@ const Melting = () => {
               <Typography variant='h2' className='MeltingHeading'>UNI-MIX METHOD</Typography>
               <Typography variant='body1' className='detailsMelting'>Our homogeneous process ensures mixing of ferroalloys and consumables inside the furnace. This efficient process ensures uniformity of the melt composition as consistent heating and stirring of the melt recipe produces the most homogenized, high-quality steel billets.</Typography>
             </Grid2>
-            <Grid2 item xs={12} sm={6} className='imageSectionMelting' sx={{  }}>
+            <Grid2 item xs={12} sm={6} className='imageSectionMelting'>
               <img src={meltingSection2} alt="raw-Materials" style={{ maxWidth: '700px', width: '100%' }} />
             </Grid2>
           </Grid2>
