@@ -219,7 +219,7 @@ export default function Sidebar({ open, toggleDrawer }) {
         open={open}
         onClose={() => toggleDrawer(false)}
         ModalProps={{
-          keepMounted: true, // Keep the drawer mounted to manage inert properly
+          keepMounted: false, // Keep the drawer mounted to manage inert properly
         }}
       >
         <Box

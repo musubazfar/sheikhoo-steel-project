@@ -4,7 +4,7 @@ import { Grid, Typography, Box } from '@mui/material';
 import '../styles/Footer.css'; // Ensure you have appropriate styling
 
 const Footer = () => {
-  return (<>
+  return (<Box>
     <section style={{width: '100%', backgroundColor: '#F1F2F2', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '200px'}}>
         <Typography className='getInTouch'>GET IN TOUCH</Typography>
         <Box sx={{mt: '2rem', display: 'flex', gap: '30px'}}>
@@ -55,7 +55,7 @@ const Footer = () => {
       </Grid>
     </Grid>
   </footer>
-  </>
+  </Box>
   );
 };
 

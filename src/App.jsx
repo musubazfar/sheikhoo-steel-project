@@ -17,34 +17,38 @@ const AppWithLocation = () => {
   return (
     <>
       <Navbar isTransparent={isAboutUs} />
-      <Routes>
-        {/* Define your routes here */}
-        <Route path="/" element={<Home />} />
-        <Route path="/technology/melting-section" element={<Melting/>} />
-        <Route path="/technology/rolling-section" element={<div>Rolling Section</div>} />
-        <Route path="/about-us" element={<div>About US</div>} />
-        <Route path="/our-testing-philosophy" element={<div>Our Testing Philosophy</div>} />
-        
-        {/* Products Section and Subcategories */}
-        <Route path="/products/amour" element={<div>Amour</div>} />
-        <Route path="/products/defender" element={<div>Defender</div>} />
-        <Route path="/products/commander" element={<div>Commander</div>} />
-        
-        <Route path="/sustainability" element={<div>Sustainability</div>} />
-        <Route path="/contact-us" element={<div>Contact Us</div>} />
-      </Routes>
-      <Footer/>
+      <div className="content">
+        <Routes>
+          {/* Define your routes here */}
+          <Route path="/" element={<Home />} />
+          <Route path="/technology/melting-section" element={<Melting />} />
+          <Route path="/technology/rolling-section" element={<div>Rolling Section</div>} />
+          <Route path="/about-us" element={<div>About US</div>} />
+          <Route path="/our-testing-philosophy" element={<div>Our Testing Philosophy</div>} />
+
+          {/* Products Section and Subcategories */}
+          <Route path="/products/amour" element={<div>Amour</div>} />
+          <Route path="/products/defender" element={<div>Defender</div>} />
+          <Route path="/products/commander" element={<div>Commander</div>} />
+
+          <Route path="/sustainability" element={<div>Sustainability</div>} />
+          <Route path="/contact-us" element={<div>Contact Us</div>} />
+        </Routes>
+      </div>
+      <Footer />
     </>
   );
 };
 
 function App() {
   return (
-    <Router>
-      <Suspense fallback={<LoadingPage />}>
-        <AppWithLocation />
-      </Suspense>
-    </Router>
+    <div className="app-container">
+      <Router>
+        <Suspense fallback={<LoadingPage />}>
+          <AppWithLocation />
+        </Suspense>
+      </Router>
+    </div>
   );
 }
 

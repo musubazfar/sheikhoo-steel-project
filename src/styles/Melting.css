@@ -59,6 +59,7 @@
     height: 100%;
     width: 100%;
     transform: translateY(7vh);
+    flex-direction: column ;
 }
 
 .textSectionMelting{
