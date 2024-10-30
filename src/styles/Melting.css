@@ -39,6 +39,25 @@
 .melting-bg-5::before {
     background-image: url('../assets/melting-bg-5.jpg');
 }
+.rolling-bg-1::before {
+    background-image: url('../assets/rolling-bg-1.jpg');
+}
+
+.rolling-bg-2::before {
+    background-image: url('../assets/rolling-bg-2.jpg');
+}
+
+.rolling-bg-3::before {
+    background-image: url('../assets/rolling-bg-3.jpg');
+}
+
+.rolling-bg-4::before {
+    background-image: url('../assets/rolling-bg-4.jpg');
+}
+
+.rolling-bg-5::before {
+    background-image: url('../assets/rolling-bg-5.jpg');
+}
 
 @keyframes zoomBackground {
     0% {
@@ -52,6 +71,28 @@
     }
 }
 
+.MuiTypography-root.pageHeadingMelting {
+    color: #cd0e2d;
+    display: inline-block; /* Ensures the element only takes up the width of its content */
+    position: absolute;
+    font-family: 'noir_probold';
+    font-size: 26px;
+    line-height: 1;
+    letter-spacing: 0px;
+    left: 15px;
+}
+
+.MuiTypography-root.pageHeadingMelting::after {
+    content: '';
+    display: block;
+    border-style: solid;
+    border-width: 0px 0px 7px 0px;
+    border-color: #FFFFFF;
+    border-radius: 0px 0px 0px 0px;
+    width: 100%;
+    position: absolute;
+    bottom: -6px;
+}
 .container-melting{
     display: flex;
     justify-content: center;
@@ -70,10 +111,13 @@
     align-items: center;
     margin: auto; /* Center horizontally */
     text-align: left; /* Center text alignment */
+    padding: 0 1rem;
 }
 .imageSectionMelting{
     margin: auto; /* Center horizontally */
     text-align: left; /* Center text alignment */
+    width: 100%;
+    flex: 1 0 300px;
 }
 
 .MuiTypography-root.MeltingHeading{
@@ -83,18 +127,26 @@
     color: #cd0e2d;
     line-height: 1;
     text-align: left;
+    width: 100%;
 }
 
 .MuiTypography-root.detailsMelting{
     padding-top: 5px;
     font-family: 'noir_promedium';
-    font-size: 18px;
+    font-size: clamp(13px, 3.5vw, 18px);
     font-weight: 400;
     line-height: 1.4;
     text-align: left;
 }
-/* 
- html{
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
- } */
+
+@media (max-width: 700px) {
+    .MuiTypography-root.detailsMelting {
+        line-height: 0.9;
+    }
+    .imageSectionMelting{
+        max-width: 350px;
+    }
+    .MuiTypography-root.pageHeadingMelting {
+        top: -150px
+    }
+}

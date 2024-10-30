@@ -1,15 +1,15 @@
 import { Box, Grid2, Typography } from '@mui/material';
 import React, { useRef } from 'react';
 import '../styles/Melting.css';
-import meltingSection1 from '../assets/melting-sec-1.png';
-import meltingSection2 from '../assets/melting-sec-2.png';
-import meltingSection3 from '../assets/melting-sec-3.png';
-import meltingSection4 from '../assets/melting-sec-4.png';
-import meltingSection5 from '../assets/melting-sec-5.png';
+import rollingSection1 from '../assets/rolling-sec-1.png';
+import rollingSection2 from '../assets/rolling-sec-2.png';
+import rollingSection3 from '../assets/rolling-sec-3.png';
+import rollingSection4 from '../assets/rolling-sec-4.png';
+import rollingSection5 from '../assets/rolling-sec-5.png';
 import NavigationIcon from '@mui/icons-material/Navigation';
 import {motion} from 'framer-motion'
 
-const Melting = () => {
+const Rolling = () => {
   const ref = [useRef(null), useRef(null), useRef(null), useRef(null), useRef(null)];
 
   const scrollToSection = (index, direction) => {
@@ -81,7 +81,7 @@ const Melting = () => {
           transition: 'transform 0.6s cubic-bezier(0.4, 0, 0.2, 1)' /* Linear-out, ease-in */
         }}
       >
-      <section className='melting-section-1 melting-bg-1' ref={ref[0]}>
+      <section className='melting-section-1 rolling-bg-1' ref={ref[0]}>
         <Box className='container-melting'>
         <Grid2 container spacing={2} sx={{ flexWrap: { sm: 'nowrap', lg: 'wrap' } }}>
             <Grid2 item='true' className='textSectionMelting' xs={12} sm={6} component={motion.div} initial="initial"
@@ -90,10 +90,10 @@ const Melting = () => {
               variants={textAnimations}
               >
         <Box>
-        <Typography className='pageHeadingMelting' sx={{top: '-200px'}}>MELTING SECTION</Typography>
+        <Typography className='pageHeadingMelting' sx={{top: '-150px'}}>ROLLING SECTION</Typography>
         </Box>
-              <Typography variant='h2' className='MeltingHeading'>IMPORTED & TESTED RAW MATERIAL</Typography>
-              <Typography variant='body1' className='detailsMelting'>Use of quality imported raw material, which is tested as per international standards (SGS testing) before use.</Typography>
+              <Typography variant='h2' className='MeltingHeading'>AUTOMATED FOR CONSISTENCY AND OPTIMIZATION</Typography>
+              <Typography variant='body1' className='detailsMelting'>Our state-of-the-art Induction Furnaces are built with higher turbulence settings to avoid any infiltration of non-metallic impurities in molten steel. These turbulence settings separate the impurities and slag, which are later removed from the pure metallic melt, ensuring only the purest mix is left for making steel billets.</Typography>
             </Grid2>
             <Grid2 item='true' xs={12} sm={6} className='imageSectionMelting'
             component={motion.div} 
@@ -101,7 +101,7 @@ const Melting = () => {
             whileInView="animate"
             exit="exit"
             variants={ImageAnimations}>
-              <img src={meltingSection1} alt="raw-Materials" style={{ maxWidth: '700px', width: '100%' }} />
+              <img src={rollingSection1} alt="raw-Materials" style={{ maxWidth: '700px', width: '100%' }} />
             </Grid2>
           </Grid2>
           <Box
@@ -120,7 +120,7 @@ const Melting = () => {
             </Box>
         </Box>
       </section>
-      <section className='melting-section-1 melting-bg-2' ref={ref[1]}>
+      <section className='melting-section-1 rolling-bg-2' ref={ref[1]}>
         <Box className='container-melting'>
           <Grid2 container spacing={2} flexDirection={'row-reverse'} sx={{ flexWrap: { sm: 'nowrap', lg: 'wrap' } }}>
             <Grid2 item='true' className='textSectionMelting' xs={12} sm={6}
@@ -129,8 +129,8 @@ const Melting = () => {
             whileInView="animate"
             exit="exit"
             variants={textAnimations}>
-              <Typography variant='h2' className='MeltingHeading'>UNI-MIX METHOD</Typography>
-              <Typography variant='body1' className='detailsMelting'>Our homogeneous process ensures mixing of ferroalloys and consumables inside the furnace. This efficient process ensures uniformity of the melt composition as consistent heating and stirring of the melt recipe produces the most homogenized, high-quality steel billets.</Typography>
+              <Typography variant='h2' className='MeltingHeading'>DIRECT ROLLING PROCESS</Typography>
+              <Typography variant='body1' className='detailsMelting'>Our rebars are produced by a direct rolling process. This cutting edge technology allows us to pass our high quality billets directly, straight ahead to our rolling mill to ensure exceptional purity, consistency and strength in our rebars, while saving energy cost.</Typography>
             </Grid2>
             <Grid2 item='true' xs={12} sm={6} className='imageSectionMelting'
             component={motion.div} 
@@ -138,7 +138,7 @@ const Melting = () => {
             whileInView="animate"
             exit="exit"
             variants={ImageAnimations}>
-              <img src={meltingSection2} alt="raw-Materials" style={{ maxWidth: '700px', width: '100%' }} />
+              <img src={rollingSection2} alt="raw-Materials" style={{ maxWidth: '700px', width: '100%' }} />
             </Grid2>
           </Grid2>
           <Box display={'flex'}>
@@ -172,7 +172,7 @@ const Melting = () => {
             </Box>
         </Box>
       </section>
-      <section className='melting-section-1 melting-bg-3' ref={ref[2]}>
+      <section className='melting-section-1 rolling-bg-3' ref={ref[2]}>
         <Box className='container-melting'>
         <Grid2 container spacing={2} sx={{ flexWrap: { sm: 'nowrap', lg: 'wrap' } }}>
             <Grid2 item='true' className='textSectionMelting' xs={12} sm={6}
@@ -181,8 +181,8 @@ const Melting = () => {
             whileInView="animate"
             exit="exit"
             variants={textAnimations}>
-              <Typography variant='h2' className='MeltingHeading'>PUREST QUALITY MIX</Typography>
-              <Typography variant='body1' className='detailsMelting'>The only steel company to use high alumina neutral ramming mass (imported from Germany and UK) inside the Melting Furnace. This ensures making only the purest possible steel compositions without any type of non-metallic inclusion, resulting in stellar quality billets.</Typography>
+              <Typography variant='h2' className='MeltingHeading'>PERFECT CURVATURE & EVEN WEIGHT DISTRIBUTION</Typography>
+              <Typography variant='body1' className='detailsMelting'>Consistent weight distribution throughout the length of the rebars makes for true international quality steel. We have equipped our rolling mill with 8 Loopers for giving better curvature and weight distribution to our rebars. Our rebars are flawless in shape and uniform in weight from one end to another – making them perfect deformed bars (i.e. rebars with visible ribs) - but not distorted or disfigured in any way.</Typography>
             </Grid2>
             <Grid2 item='true' xs={12} sm={6} className='imageSectionMelting'
             component={motion.div} 
@@ -190,7 +190,7 @@ const Melting = () => {
             whileInView="animate"
             exit="exit"
             variants={ImageAnimations}>
-              <img src={meltingSection3} alt="raw-Materials" style={{ maxWidth: '700px', width: '100%' }} />
+              <img src={rollingSection3} alt="raw-Materials" style={{ maxWidth: '700px', width: '100%' }} />
             </Grid2>
           </Grid2>
           <Box display={'flex'}>
@@ -225,7 +225,7 @@ const Melting = () => {
             </Box>
         </Box>
       </section>
-      <section className='melting-section-1 melting-bg-4' ref={ref[3]}>
+      <section className='melting-section-1 rolling-bg-4' ref={ref[3]}>
         <Box className='container-melting'>
         
           <Grid2 container spacing={2} flexDirection={'row-reverse'} sx={{ flexWrap: { sm: 'nowrap', lg: 'wrap' } }}>
@@ -235,8 +235,8 @@ const Melting = () => {
             whileInView="animate"
             exit="exit"
             variants={textAnimations}>
-              <Typography variant='h2' className='MeltingHeading'>IMPURITY ISOLATION</Typography>
-              <Typography variant='body1' className='detailsMelting'>Our state-of-the-art Induction Furnaces are built with higher turbulence settings to avoid any contamination of non-metallic impurities in molten steel. These turbulence settings separate the impurities and slag, which are later removed from the pure metallic melt, ensuring only the purest mix is left for making steel billets.</Typography>
+              <Typography variant='h2' className='MeltingHeading'>UPLIFTED QUALITY WITH STRAIGHTER REBARS</Typography>
+              <Typography variant='body1' className='detailsMelting'>We are equipped with the latest cooling bed with walking-beam technology that automizes the cooling process before rebars are ready to be bundled and shipped. This reduces waviness and ensures that rebars remain straight and in their best form.</Typography>
             </Grid2>
             <Grid2 item='true' xs={12} sm={6} className='imageSectionMelting'
             component={motion.div} 
@@ -244,7 +244,7 @@ const Melting = () => {
             whileInView="animate"
             exit="exit"
             variants={ImageAnimations}>
-              <img src={meltingSection4} alt="raw-Materials" style={{ maxWidth: '700px', width: '100%' }} />
+              <img src={rollingSection4} alt="raw-Materials" style={{ maxWidth: '700px', width: '100%' }} />
             </Grid2>
           </Grid2>
           <Box display={'flex'}>
@@ -279,7 +279,7 @@ const Melting = () => {
             </Box>
         </Box>
       </section>
-      <section className='melting-section-1 melting-bg-5' ref={ref[4]}>
+      <section className='melting-section-1 rolling-bg-5' ref={ref[4]}>
         <Box className='container-melting'>
         <Box
               sx={{
@@ -302,8 +302,8 @@ const Melting = () => {
             whileInView="animate"
             exit="exit"
             variants={textAnimations}>
-              <Typography variant='h2' className='MeltingHeading'>EUROPEAN CONTINUOUS CASTING MACHINE</Typography>
-              <Typography variant='body1' className='detailsMelting'>Pakistan’s first and only European, high-speed CCM having 7/13 radius. This ratio gives better stress handling while casting, a characteristic which is passed on to rebars produced with our billets. Our Italian CCM also uses quality Copper Mould Tubes for premium surface finish of steel billets with less scaling on billets/rebars.</Typography>
+              <Typography variant='h2' className='MeltingHeading'>RIBS AND STAMP AS PER INTERNATIONAL STANDARDS</Typography>
+              <Typography variant='body1' className='detailsMelting'>Focus on quality is central to every aspect of our rebars, such that even the ribs and stamps on our rebars conform to international quality standards. This ensures that our rebars bond with concrete with the strongest hold.</Typography>
             </Grid2>
             <Grid2 item='true' xs={12} sm={6} className='imageSectionMelting'
             component={motion.div} 
@@ -311,7 +311,7 @@ const Melting = () => {
             whileInView="animate"
             exit="exit"
             variants={ImageAnimations}>
-              <img src={meltingSection5} alt="raw-Materials" style={{ maxWidth: '700px', width: '100%' }} />
+              <img src={rollingSection5} alt="raw-Materials" style={{ maxWidth: '700px', width: '100%' }} />
             </Grid2>
           </Grid2>
         </Box>
@@ -321,4 +321,4 @@ const Melting = () => {
   );
 };
 
-export default Melting;
+export default Rolling;

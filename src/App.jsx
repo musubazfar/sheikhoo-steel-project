@@ -4,6 +4,7 @@ import { Suspense, lazy } from 'react';
 import LoadingPage from './components/Loading';
 import Melting from './pages/Melting';
 import Footer from './components/Footer';
+import Rolling from './pages/Rolling';
 
 // Lazy load the Navbar and Home components
 const Navbar = lazy(() => import('./components/Navbar'));
@@ -12,7 +13,7 @@ const Home = lazy(() => import('./pages/Home'));
 // Custom component to determine if the Navbar should be transparent
 const AppWithLocation = () => {
   const location = useLocation();
-  const isAboutUs = location.pathname === '/technology/melting-section';
+  const isAboutUs = location.pathname === '/technology/melting-section' || location.pathname === '/technology/rolling-section';
 
   return (
     <>
@@ -22,7 +23,7 @@ const AppWithLocation = () => {
           {/* Define your routes here */}
           <Route path="/" element={<Home />} />
           <Route path="/technology/melting-section" element={<Melting />} />
-          <Route path="/technology/rolling-section" element={<div>Rolling Section</div>} />
+          <Route path="/technology/rolling-section" element={<Rolling/>} />
           <Route path="/about-us" element={<div>About US</div>} />
           <Route path="/our-testing-philosophy" element={<div>Our Testing Philosophy</div>} />
 
