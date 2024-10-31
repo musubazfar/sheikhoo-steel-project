@@ -8,7 +8,7 @@ import heading_bg from "../assets/product_heading_background.png";
 
 const Defender = () => {
   return (
-    <main>
+    <main className="main-content">
       <Box className="productsContent">
         <Box className="leftDiv">
           <Box className="ribbonProducts defenderProduct">

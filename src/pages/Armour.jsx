@@ -7,7 +7,7 @@ import steel from '../assets/armour.png'
 
 const Armour = () => {
   return (
-    <main>
+    <main className="main-content">
         <Box className='productsContent'>
         <Box className='leftDiv'>
     <Box className='ribbonProducts armourProduct'>

@@ -8,6 +8,7 @@ import Rolling from './pages/Rolling';
 import Armour from './pages/Armour';
 import Defender from './pages/Defender';
 import Commander from './pages/Commander';
+import AboutUs from './pages/AboutUs';
 
 // Lazy load the Navbar and Home components
 const Navbar = lazy(() => import('./components/Navbar'));
@@ -27,7 +28,7 @@ const AppWithLocation = () => {
           <Route path="/" element={<Home />} />
           <Route path="/technology/melting-section" element={<Melting />} />
           <Route path="/technology/rolling-section" element={<Rolling/>} />
-          <Route path="/about-us" element={<div>About US</div>} />
+          <Route path="/about-us" element={<AboutUs/>} />
           <Route path="/our-testing-philosophy" element={<div>Our Testing Philosophy</div>} />
 
           {/* Products Section and Subcategories */}
