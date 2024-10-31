@@ -1,0 +1,176 @@
+.content{
+    background-image: url(../assets/rolling-bg-5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.productsContent {
+    display: flex;
+    margin: 0 auto;
+    padding: 0 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: row; /* Default to row */
+}
+
+.leftDiv {
+    flex: 1 1 200px;
+    display: flex;
+    max-width: 40%;
+    position: relative; /* Required for sticky elements within flex items */
+    align-items: flex-start; /* Ensures child items align properly */
+    justify-content: flex-end;
+}
+
+.armourProduct {
+    background-image: url(../assets/commander-curve-bg.png);
+}
+.defenderProduct {
+    background-image: url(../assets/defender-curve-bg.png);
+}
+.commanderProduct {
+    background-image: url(../assets/commander-curve-bg-purple.png);
+}
+
+.ribbonProducts {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    max-width: 400px;
+    width: 100%;
+    min-height: 634px;
+    position: sticky;
+    top: 0;
+    display: flex; /* Ensure it can hold the image and text */
+    justify-content: center; /* Center the content inside */
+    align-items: flex-start; /* Align items at the start */
+    flex-direction: column; /* Stack children vertically */
+}
+
+.overlayImage {
+    width: 120%; /* Set a fixed width for the image */
+    position: absolute; /* Use absolute positioning */
+    z-index: 1; /* Ensure it's on top of other elements */
+    left: 0;
+    top: 30px; /* Adjust this if you want the image to start at the top */
+}
+
+.textContainer {
+    width: 100%;
+    z-index: 2; /* Ensure text is above the background */
+    text-align: right; /* Right align text */
+}
+
+.MuiTypography-root.productTitleHeading {
+    font-family: noir_promedium;
+    text-transform: uppercase;
+    font-size: 52px;
+    color: #fff;
+    line-height: 44px;
+    margin-bottom: 20px
+}
+
+.MuiTypography-root.productTitleDetails {
+    font-size: 26px;
+    color: #fff;
+    font-family: 'noir_promedium';
+    text-transform: uppercase;
+    line-height: 24px;
+    text-align: right;
+}
+
+
+.rightDiv {
+    flex: 1 0 200px;
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+    padding: 4rem 0 0 5rem;
+    box-sizing: border-box;
+    gap: 20px;
+}
+
+.MuiTypography-root.textStylesProducts{
+    font-family: 'noir_proregular';
+    font-size: 18px;
+    line-height: 1.3;
+    max-width: 550px;
+}
+
+.MuiTypography-root.headingsProducts{
+    font-family: 'noir_proheavy';
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.imageSectionProducts {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Optional: spacing between images */
+}
+
+.imageSectionProducts img {
+    width: 100%; /* Set a fixed width */
+    max-width: 500px;
+    aspect-ratio: 1; /* Maintains a 1:1 aspect ratio (square) */
+    border-radius: 8px; /* Optional: for rounded corners */
+}
+
+@media (max-width: 690px) {
+    .rightDiv {
+        max-width: 100%;
+        padding: 4rem 0 0 2rem;
+    }
+    .imageSectionProducts img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        max-width: 375px;
+        min-height: none;
+    }
+    .MuiTypography-root.headingsProducts{
+        font-size: 32px;
+    }
+    .leftDiv {
+        max-width: 75%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 400px){
+    .MuiTypography-root.productTitleHeading {
+        font-size: 44px;
+    }
+    
+    .MuiTypography-root.productTitleDetails {
+        font-size: 26px;
+    }
+    .ribbonProducts {
+        min-height: 28rem;
+    }
+}
+
+
+.imperial_size{
+    max-width: 340px;
+    aspect-ratio: 1/1;
+    height: 80px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.imageContainer {
+    position: relative; /* Make the container a positioned element */
+    display: inline-block; /* Allow the container to size around the image */
+}
+
+.overlayText {
+    position: absolute; /* Position the text absolutely */
+    top: 50%; /* Center vertically */
+    left: 168px; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position to center */
+    font-family: 'noir_proheavy';
+    font-size: 32px;
+    /* Add more styles as needed */
+}
