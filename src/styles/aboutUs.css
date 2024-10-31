@@ -1,6 +1,11 @@
 .sectionOne-aboutUs{
     padding: 2rem
 }
+.sec1-bg{
+    background-image: url(../assets/aboutus-page-banner-sec1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .aboutUs-text-container{
     display: flex;

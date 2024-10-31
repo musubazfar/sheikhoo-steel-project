@@ -51,7 +51,9 @@ const AboutUs = () => {
               <NavigationIcon sx={{transform: 'rotate(180deg)', height: '4rem', width: '4rem'}}/>
             </Box>
         </section>
-        <section ref={ref[1]}></section>
+        <section className='sectionOne-aboutUs sec1-bg' ref={ref[1]}>
+            <Box></Box>
+        </section>
         <section ref={ref[2]}></section>
         <section ref={ref[3]}></section>
     </Box>
