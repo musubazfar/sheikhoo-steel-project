@@ -1,15 +1,59 @@
 .sectionOne-aboutUs{
-    padding: 2rem
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
 }
-.sec1-bg{
+
+.padding-2{
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.bg-sec1{
     background-image: url(../assets/aboutus-page-banner-sec1.jpg);
+}
+
+.bg-sec2{
+    background-image: url(../assets/aboutus-page-banner-gray-bg.jpg);
+}
+.sec-bg {
+    position: relative;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
+    min-height: 100vh;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sec-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0; /* Start from the right side */
+    width: 50%; /* Cover half of the section */
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Blackish overlay */
+    z-index: 0;
+}
+
+.left-overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0; /* Position overlay to start from the left */
+    width: 50%; /* Cover half of the section */
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Blackish overlay */
+    z-index: 0;
 }
 
 .aboutUs-text-container{
     display: flex;
     flex-wrap: wrap;
+    flex-grow: 1;
+    z-index: 1;
 }
 
 .text-aboutUs{
@@ -18,17 +62,15 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
-    flex: 1 0 50%;
+    flex: 1 0 350px;
 }
 
 .image-aboutUs{
-    flex: 1 0 50%;
+    flex: 1 0 350px;
     margin-top: 30px;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
-    /* width: 100%; */
 }
 
 .MuiTypography-root.sheikhoo-group-heading{
@@ -36,4 +78,10 @@
         line-height: 40px;
         font-weight: bold;
         font-family: 'noir_proheavy';
+}
+
+@media (max-width: 716px){
+    .sec-bg::before {
+        width: 100%; /* Cover half of the section */
+    }
 }
