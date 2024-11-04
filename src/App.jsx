@@ -9,6 +9,7 @@ import Armour from './pages/Armour';
 import Defender from './pages/Defender';
 import Commander from './pages/Commander';
 import AboutUs from './pages/AboutUs';
+import Our_testing_philosophy from './pages/Our_testing_philosophy';
 
 // Lazy load the Navbar and Home components
 const Navbar = lazy(() => import('./components/Navbar'));
@@ -17,8 +18,13 @@ const Home = lazy(() => import('./pages/Home'));
 // Custom component to determine if the Navbar should be transparent
 const AppWithLocation = () => {
   const location = useLocation();
-  const isAboutUs = location.pathname === '/technology/melting-section' || location.pathname === '/technology/rolling-section';
+const aboutUsPaths = new Set([
+  '/technology/melting-section',
+  '/technology/rolling-section',
+  '/our-testing-philosophy'
+]);
 
+const isAboutUs = aboutUsPaths.has(location.pathname);
   return (
     <>
       <Navbar isTransparent={isAboutUs} />
@@ -29,7 +35,7 @@ const AppWithLocation = () => {
           <Route path="/technology/melting-section" element={<Melting />} />
           <Route path="/technology/rolling-section" element={<Rolling/>} />
           <Route path="/about-us" element={<AboutUs/>} />
-          <Route path="/our-testing-philosophy" element={<div>Our Testing Philosophy</div>} />
+          <Route path="/our-testing-philosophy" element={<Our_testing_philosophy/>} />
 
           {/* Products Section and Subcategories */}
           <Route path="/products/amour" element={<Armour/>} />

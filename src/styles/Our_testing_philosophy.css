@@ -1,0 +1,172 @@
+.firstDiv-philosophy{
+    background-image: url(../assets/philosophy-image-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%); 
+    background-position: center;
+    padding-bottom: 7rem; 
+    position: relative;
+    z-index: 12;
+}
+
+.heading-philosophy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 180px 120px 120px 120px;
+    box-sizing: border-box;
+}
+
+.MuiTypography-root.heading-page-philosophy{
+    font-family: 'noir_proheavy';
+    font-size: 82px;
+    font-weight: 800;
+    line-height: 68px;
+    color: #fff;
+    text-shadow: 2px 5px 5px rgb(98 92 92 / 75%);
+    text-wrap: nowrap;
+    margin-bottom: 3.5rem;
+}
+
+
+
+.MuiTypography-root.steel-dilemma{
+    font-size: 38px;
+    color: #cf202f;
+    font-family: 'noir_promedium';
+    text-shadow: 1px 1px 1px rgba(133, 47, 47, 0.75);
+    text-align: center;
+    text-wrap: nowrap;
+    margin-bottom: 0.3rem;
+}
+
+.MuiTypography-root.details-steel-dilemma{
+    font-family: 'noir_proregular';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+    max-width: 820px;
+    margin: 0 auto
+}
+
+.internal-testing{
+    position: relative;
+    z-index: 10;
+}
+
+.secondDiv-philosophy{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    position: relative;
+    padding: 20rem 4rem 0rem;
+    overflow: hidden;
+    margin-top: -20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.MuiTypography-root.internal-testing{
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+    font-family: 'noir_promedium';
+    text-align: center
+}
+
+.MuiTypography-root.empowering{
+    font-family: 'noir_probold';
+    font-size: 80px;
+    text-shadow: 
+    2px 2px 0 rgba(0, 0, 0, 0.6),  /* Solid dark shadow */
+    4px 4px 0 rgba(0, 0, 0, 0.4),  /* Slightly larger shadow for depth */
+    6px 6px 5px rgba(0, 0, 0, 0.3); /* Blurred shadow for a soft effect */
+    line-height: 68px;
+    color: #fff;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.MuiTypography-root.testing-property {
+    color: #53caea;
+    font-family: 'noir_proregular';
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: 600;
+}
+
+.MuiTypography-root.chemical-testing{
+    font-size: 42px;
+    font-weight: 700;
+    font-family: 'noir_promedium';
+    color: #53caea;
+    text-align: center;
+}
+
+.contentWithImage{
+    background-color: #53caea;
+}
+
+.coneContainer {
+    display: flex;
+    justify-content: space-between; /* Center aligns the children */
+    gap: 20px; /* Adds spacing between boxes */
+    align-items: flex-end;
+    flex-direction: row;
+  }
+
+@media (max-width: 910px){
+    .lastHeadings{
+    font-size: 24px !important;
+    }
+}
+
+@media (max-width: 745px){
+    .coneContainer {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 4rem;
+        
+    }
+    .coneContainer > div> img{
+        display: none;
+    }
+}
+
+@media (max-width: 675px) and (min-width: 591px){
+    .MuiTypography-root.empowering{
+        font-size: 70px;
+    }
+}
+@media (max-width: 590px){
+    .MuiTypography-root.heading-page-philosophy{
+        font-size: 40px;
+        line-height: 35px;
+        margin-bottom: 1rem;
+    }
+    .MuiTypography-root.steel-dilemma{
+        font-size: 28px;
+        margin-bottom: 0.5rem;
+    }
+
+    .firstDiv-philosophy{
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); 
+    }
+    .MuiTypography-root.internal-testing{
+        font-size: 32px;
+        text-wrap: nowrap;
+    }
+    .secondDiv-philosophy{
+        padding: 20rem 2rem 0rem;
+    }
+    .MuiTypography-root.empowering{
+        font-size: 40px;
+    }
+    .MuiTypography-root.chemical-testing{
+        font-size: 24px;
+    }
+}
