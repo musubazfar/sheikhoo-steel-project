@@ -1,13 +1,26 @@
 import { Box, Typography } from "@mui/material";
-import React from "react";
+import React, { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 import "../styles/Sustainability.css";
 import img_1 from "../assets/sustainability-img-1.png";
 import img_2 from "../assets/sustainability-img-2.png";
 
 export default function Sustainability() {
+  const ref1 = useRef(null);
+  const ref2 = useRef(null);
+  const isInView1 = useInView(ref1, { once: false });
+  const isInView2 = useInView(ref2, { once: false });
+
   return (
-    <Box className="sustainability-container">
-      <Box className="sst-production-container">
+    <Box className="sustainability-container" overflow={'hidden'}>
+      <Box
+        className="sst-production-container"
+        ref={ref1}
+        component={motion.div}
+        initial={{ x: -100, opacity: 0 }}
+        animate={{ x: isInView1 ? 0 : -100, opacity: isInView1 ? 1 : 0 }}
+        transition={{ duration: 1 }}
+      >
         <Box className="img-container">
           <Typography className="img-heading">
             Sustainable <br /> Steel Production
@@ -32,9 +45,16 @@ export default function Sustainability() {
           <Typography className="detailedText">Plans for installing an additional 35 Mega Watt Power Plant is underway to meet growing industry demands.</Typography>
         </Box>
       </Box>
-      <Box className="sst-production-container">
+      <Box
+        className="sst-production-container"
+        ref={ref2}
+        component={motion.div}
+        initial={{ x: 100, opacity: 0 }}
+        animate={{ x: isInView2 ? 0 : 100, opacity: isInView2 ? 1 : 0 }}
+        transition={{ duration: 1 }}
+      >
         <Box className="img-container">
-          <Typography className="img-heading">Transforming<br/>Steel Industry<br/>for a Better Future</Typography>
+          <Typography className="img-heading">Transforming<br />Steel Industry<br />for a Better Future</Typography>
           <img src={img_2} alt="sustainable-steel" style={{ width: "100%", height: "auto" }} />
         </Box>
         <Box className="descriptionText">
@@ -55,15 +75,15 @@ export default function Sustainability() {
             technology releases less than 50 micron smoke, adhering to strict international standards.
           </Typography>
           <Typography className="headingTexts" sx={{ mt: "2rem" }}>
-          Water Conservation:
-          <br/>
-          Keeping Our Planet Green
+            Water Conservation:
+            <br />
+            Keeping Our Planet Green
           </Typography>
           <Typography className="detailedText">
-          Our water conservation machine is designed to conserve the water used in the creation of steel by reusing and recirculating it within the system. By doing so, we’re not only supporting conservation efforts but also ensuring sustainable production practices for the future.
+            Our water conservation machine is designed to conserve the water used in the creation of steel by reusing and recirculating it within the system. By doing so, we’re not only supporting conservation efforts but also ensuring sustainable production practices for the future.
           </Typography>
           <Typography className="detailedText">
-          At Sheikhoo Steel, we believe that the future is what we make it. That’s why we’re dedicated to creating a better world for ourselves and future generations through our commitment to sustainable steelmaking practices.
+            At Sheikhoo Steel, we believe that the future is what we make it. That’s why we’re dedicated to creating a better world for ourselves and future generations through our commitment to sustainable steelmaking practices.
           </Typography>
         </Box>
       </Box>
