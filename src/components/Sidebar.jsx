@@ -128,7 +128,7 @@ export default function Sidebar({ open, toggleDrawer }) {
           <List component="div" disablePadding>
             <ListItem
               component={Link}
-              to="/products/amour"
+              to="/products/armour"
               onClick={() => toggleDrawer(false)}
             >
               <ListItemButton className="list-item-button">
@@ -141,7 +141,7 @@ export default function Sidebar({ open, toggleDrawer }) {
                   }}
                   variant="body2"
                 >
-                  Amour
+                  Armour
                 </Typography>
               </ListItemButton>
             </ListItem>
