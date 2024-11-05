@@ -3,6 +3,7 @@ import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup"; // For validation schema
 import "../styles/Contact_us.css";
+import {easeIn, motion} from 'framer-motion'
 
 // Validation schema using Yup
 const validationSchema = Yup.object().shape({
@@ -14,7 +15,7 @@ const validationSchema = Yup.object().shape({
 export default function Contact_us() {
   return (
     <Box className="container_contact_us">
-      <Box flex={'1 1 30%'} maxWidth={'550px'}>
+      <Box flex={'1 1 30%'} maxWidth={'550px'} component={motion.div} initial={{x:-100, opacity: 0}} animate={{x:0, opacity: 1}} transition={{ duration: 1 }}>
         <Typography variant="h4" component="h1" className="contact-heading">
           Contact Sheikhoo Steel
         </Typography>
@@ -51,7 +52,7 @@ export default function Contact_us() {
       </Box>
 
       {/* Form Card */}
-      <Box flex={'1 1 40%'} maxWidth={'550px'} justifyContent={"center"} display={'flex'}>
+      <Box flex={'1 1 40%'} maxWidth={'550px'} justifyContent={"center"} display={'flex'} component={motion.div} initial={{x:100, opacity: 0}} animate={{x:0, opacity: 1}} transition={{ duration: 1 }}>
       <Card variant="outlined" sx={{ mt: 4, backgroundColor:'#71d1eb', p: 4, boxShadow: 3, maxWidth: '400px', width: '100%' }}>
         <CardContent>
           <Typography variant="h6" component="h2" className="detailsContact" sx={{fontSize: '1.6rem !important'}}>

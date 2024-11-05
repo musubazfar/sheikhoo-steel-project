@@ -42,7 +42,7 @@ const AppWithLocation = () => {
           <Route path="/our-testing-philosophy" element={<Our_testing_philosophy />} />
 
           {/* Products Section and Subcategories */}
-          <Route path="/products/amour" element={<Armour />} />
+          <Route path="/products/armour" element={<Armour />} />
           <Route path="/products/defender" element={<Defender />} />
           <Route path="/products/commander" element={<Commander />} />
 
