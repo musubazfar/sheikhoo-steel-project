@@ -1,0 +1,57 @@
+.container_contact_us{
+    background-image: url(../assets/contact-us.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+.MuiTypography-root.contact-heading{
+    color: #cd0e2d;
+    font-family: 'noir_probold';
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: 0px;
+    margin: 0;
+    padding-bottom: 70px;
+}
+
+.MuiTypography-root.emailHeading{
+    color: #fff;
+    font-family: 'noir_probold';
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 0px;
+    margin: 0;
+}
+
+.MuiTypography-root.detailsContact{
+    color: #000;
+    font-family: 'noir_promedium';
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 0px;
+    margin-bottom: 2rem;
+}
+
+.css-1jk99ih-MuiInputBase-input-MuiOutlinedInput-input,
+.css-x9n5xx-MuiInputBase-root-MuiOutlinedInput-root {
+    background: white !important;
+}
+
+@media(max-width: 576px){
+    .container_contact_us{
+        padding: 4rem 0.5rem;
+    }
+}
+@media(max-width: 800px){
+    .container_contact_us{
+        gap: 2rem;
+    }
+}

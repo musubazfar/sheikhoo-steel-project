@@ -1,30 +1,34 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import { Suspense, lazy } from 'react';
-import LoadingPage from './components/Loading';
-import Melting from './pages/Melting';
-import Footer from './components/Footer';
-import Rolling from './pages/Rolling';
-import Armour from './pages/Armour';
-import Defender from './pages/Defender';
-import Commander from './pages/Commander';
-import AboutUs from './pages/AboutUs';
-import Our_testing_philosophy from './pages/Our_testing_philosophy';
 
 // Lazy load the Navbar and Home components
 const Navbar = lazy(() => import('./components/Navbar'));
 const Home = lazy(() => import('./pages/Home'));
+const LoadingPage = lazy(() => import('./components/Loading'));
+const Melting = lazy(() => import('./pages/Melting'));
+const Footer = lazy(() => import('./components/Footer'));
+const Rolling = lazy(() => import('./pages/Rolling'));
+const Armour = lazy(() => import('./pages/Armour'));
+const Defender = lazy(() => import('./pages/Defender'));
+const Commander = lazy(() => import('./pages/Commander'));
+const AboutUs = lazy(() => import('./pages/AboutUs'));
+const Our_testing_philosophy = lazy(() => import('./pages/Our_testing_philosophy'));
+const Sustainability = lazy(() => import('./pages/Sustainability'));
+const Contact_us = lazy(() => import('./pages/Contact_us'));
 
 // Custom component to determine if the Navbar should be transparent
 const AppWithLocation = () => {
   const location = useLocation();
-const aboutUsPaths = new Set([
-  '/technology/melting-section',
-  '/technology/rolling-section',
-  '/our-testing-philosophy'
-]);
+  const aboutUsPaths = new Set([
+    '/technology/melting-section',
+    '/technology/rolling-section',
+    '/our-testing-philosophy'
+  ]);
+  
+  const isAboutUs = aboutUsPaths.has(location.pathname);
+  const showFooter = location.pathname !== '/contact-us'; // Determine if the footer should be shown
 
-const isAboutUs = aboutUsPaths.has(location.pathname);
   return (
     <>
       <Navbar isTransparent={isAboutUs} />
@@ -33,20 +37,20 @@ const isAboutUs = aboutUsPaths.has(location.pathname);
           {/* Define your routes here */}
           <Route path="/" element={<Home />} />
           <Route path="/technology/melting-section" element={<Melting />} />
-          <Route path="/technology/rolling-section" element={<Rolling/>} />
-          <Route path="/about-us" element={<AboutUs/>} />
-          <Route path="/our-testing-philosophy" element={<Our_testing_philosophy/>} />
+          <Route path="/technology/rolling-section" element={<Rolling />} />
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/our-testing-philosophy" element={<Our_testing_philosophy />} />
 
           {/* Products Section and Subcategories */}
-          <Route path="/products/amour" element={<Armour/>} />
-          <Route path="/products/defender" element={<Defender/>} />
-          <Route path="/products/commander" element={<Commander/>} />
+          <Route path="/products/amour" element={<Armour />} />
+          <Route path="/products/defender" element={<Defender />} />
+          <Route path="/products/commander" element={<Commander />} />
 
-          <Route path="/sustainability" element={<div>Sustainability</div>} />
-          <Route path="/contact-us" element={<div>Contact Us</div>} />
+          <Route path="/sustainability" element={<Sustainability />} />
+          <Route path="/contact-us" element={<Contact_us />} />
         </Routes>
       </div>
-      <Footer />
+      {showFooter && <Footer />} {/* Render Footer based on the showFooter condition */}
     </>
   );
 };
